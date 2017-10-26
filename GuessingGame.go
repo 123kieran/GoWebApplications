@@ -1,4 +1,4 @@
-// Problem 1
+// Problem 2
 // Kieran O'Haloran 25/10/17
 
 package main
@@ -14,7 +14,7 @@ func requestHandler(w http.ResponseWriter, r *http.Request) {
 	w.Header().Set("Content-Type", "text/html")
 
 	//Output to browser
-	fmt.Fprintln(w, "Guessing Game")
+	fmt.Fprintln(w, "<h1>Guessing Game<h1>")
 }
 
 func main() {
