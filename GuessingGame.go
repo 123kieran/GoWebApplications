@@ -8,14 +8,12 @@ import (
 	"net/http"
 )
 
-func requestHandler(w http.ResponseWriter, r *http.Request) {
 
-	//Browser renders html tags
-	w.Header().Set("Content-Type", "text/html")
 
-	//Output to browser
-	fmt.Fprintln(w, "<h1>Guessing Game<h1>")
-}
+func server(w http.ResponseWriter, r *http.Request){
+	//fmt.Fprintf(w, "<h1>Guessing Game</h1>")
+	http.ServeFile(w, r, "guess.html")}
+
 
 func main() {
 	http.HandleFunc("/", requestHandler)
