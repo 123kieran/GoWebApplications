@@ -1,5 +1,5 @@
 // Problem 1
-// Conor Raftery 12/10/17
+// Kieran O'Haloran 25/10/17
 
 package main
 
