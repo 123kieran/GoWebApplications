@@ -16,7 +16,8 @@
   <body>
     <h2>Please Refresh the page to generate a new random number</h2>
     <h2>{{.Message}}</h2>
-    
+     <h4>you guessed {{.YourGuess}}</h4>
+
     <form action="/guess" method="GET">
     <input type="text" name="guess">
     <input type="submit" value="Guess">

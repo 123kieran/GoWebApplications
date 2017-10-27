@@ -13,7 +13,8 @@ import (
 )
 
 type myMsg struct {
-	Message string
+	Message   string
+	YourGuess int
 }
 
 func server(w http.ResponseWriter, r *http.Request) {
@@ -24,7 +25,6 @@ func server(w http.ResponseWriter, r *http.Request) {
 }
 
 func guessHandler(w http.ResponseWriter, r *http.Request) {
-
 	message := "Guess a number between 1 and 20"
 	rand.Seed(time.Now().UTC().UnixNano())
 
