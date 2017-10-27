@@ -1,4 +1,6 @@
 // Kieran O'Haloran 25/10/17
+//http://blog.scottlogic.com/2017/02/28/building-a-web-app-with-go.html
+//// https://data-representation.github.io
 
 package main
 
