@@ -25,7 +25,7 @@ func guessHandler(w http.ResponseWriter, r *http.Request) {
 
 	//http.ServeFile(w, r, "guess.html")
 
-	message := "Please Guess a number between 1 and 20"
+	message := "Guess a number between 1 and 20"
 	rand.Seed(time.Now().UTC().UnixNano())
 
 	target := 0
