@@ -46,9 +46,9 @@ func guessHandler(w http.ResponseWriter, r *http.Request) {
 	if yourGuess == target {
 		message = "Correct Guess " + strconv.Itoa(yourGuess) + " was the answer"
 	} else if yourGuess < target {
-		message = "Try Again your guess  was  too low"
+		message = "Your Guess is too low, Try again!"
 	} else {
-		message = "Try Again your guess was too high"
+		message = "Your Guess is too high, Try again!"
 	}
 
 	cookie = &http.Cookie{
