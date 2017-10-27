@@ -25,8 +25,6 @@ func server(w http.ResponseWriter, r *http.Request) {
 
 func guessHandler(w http.ResponseWriter, r *http.Request) {
 
-	//http.ServeFile(w, r, "guess.html")
-
 	message := "Guess a number between 1 and 20"
 	rand.Seed(time.Now().UTC().UnixNano())
 
@@ -42,8 +40,6 @@ func guessHandler(w http.ResponseWriter, r *http.Request) {
 	}
 
 	yourGuess, _ := strconv.Atoi(r.FormValue("guess"))
-
-	//msg := &myMsg{Message:message, YourGuess: yourGuess}
 	//compare YourGuess to target guess(random number)
 	if yourGuess == target {
 		message = "Correct Guess " + strconv.Itoa(yourGuess) + " was the answer"
